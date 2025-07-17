@@ -82,3 +82,8 @@
 #sec::after{
     content:'Seconds';
 }
+@media (min-width: 880px) {
+  .clock {
+    font-size: 5rem; /* mai mic pentru ecrane foarte mari */
+  }
+}
