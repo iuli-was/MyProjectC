@@ -53,13 +53,13 @@
     }
 
     .video-background {
-    position: fixed; 
+    position: fixed; /* sau absolute, dacă vrei doar o secțiune */
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: -1; 
+    z-index: -1; /* asigură că stă în spate */
     }
 
     .video-background video {
@@ -99,30 +99,36 @@
         <li class="nav-item">
           <a class="nav-link disabled" href="#">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./index2.html">Clock</a>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown07">
+            <a class="dropdown-item" href="./index2.html">Clock</a>
+            <a class="dropdown-item" href="#">Proj2</a>
+            <a class="dropdown-item" href="#">Proj3</a>
+          </div>
         </li>
       </ul>
     </div>
-</nav>
+   </nav>
 
-<div class="video-background">
-  <video autoplay muted loop playsinline>
-    <source src="./assets/Earth Rotation Loop [FREE TO USE].mp4" type="video/mp4" />
-    Browser-ul dvs. nu suportă elementul video.
-  </video>
-</div>
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="./assets/Earth Rotation Loop [FREE TO USE].mp4" type="video/mp4" />
+            Browser-ul dvs. nu suportă elementul video.
+        </video>
+    </div>
     
-<div class="container">
+<div class="container" >
     <!-- Primul box -->
     <div class="box">
         <h1 class="scris">Atenție la Phishing și Inginerie Socială!</h1>
         <p class="scris">În era digitală, atacurile de <strong>phishing</strong> și <strong>inginerie socială</strong> au devenit din ce în ce mai sofisticate și mai frecvente. Aceste tactici pot compromite informațiile tale personale, financiare sau confidențiale. Fii vigilent și informează-te pentru a te proteja!</p>
+    </div>
+        <div class="box">
+            <h2 class="scris">Ce este Phishing-ul?</h2>
+            <p class="scris">• Phishing-ul este o formă de înșelătorie online prin care atacatorii se deghizează ca entități de încredere (bănci, companii, etc.) pentru a obține informații sensibile, cum ar fi parole, numere de carduri de credit sau informații personale. Aceste atacuri se realizează adesea prin e-mailuri, mesaje text sau site-uri web false.</p>
 
-        <h2 class="scris">Ce este Phishing-ul?</h2>
-        <p class="scris">• Phishing-ul este o formă de înșelătorie online prin care atacatorii se deghizează ca entități de încredere (bănci, companii, etc.) pentru a obține informații sensibile, cum ar fi parole, numere de carduri de credit sau informații personale. Aceste atacuri se realizează adesea prin e-mailuri, mesaje text sau site-uri web false.</p>
-
-        <div><h5><p class="scris">• Unde ne uitam pentu a fii siguri ca nu este un fals ?</p></h5></div>
+            <div><h5><p class="scris">• Unde ne uitam pentu a fii siguri ca nu este un fals ?</p></h5></div>
 
         <div class="example">
             <h3 class="scris">Exemplu de Phishing</h3>
@@ -137,7 +143,7 @@
                     <a href="./assets/fakefac.png" target="_blank">
                         <img src="./assets/fakefac.png" alt="Fake Facebook" width="100%" height="250" style="object-fit: cover;">
                     </a>
-                    <h5 class="scris" style="color:rgb(199, 6, 6);">Pagina care nu aparține de Facebook.</h5>
+                    <h5 class="scris" style="color:rgb(104, 5, 5);">Pagina care nu aparține de Facebook.</h5>
                 </div>
                 <div class="p-2" style="flex:1; min-width:200px;">
                     <a href="./assets/secure.png" target="_blank">
@@ -166,7 +172,7 @@
     </div>
 
     <!-- Al doilea box -->
-    <div class="box">
+        <div class="box">
         <h2 class="scris">Ce pot face dacă am fost păcălit să-mi divulg credentialele?</h2>
         <p class="scris">• Iată câteva acțiuni esențiale (nu uita că este o cursă contra timp după ce atacatorul are la îndemână datele tale):</p>
         <div class="example">
@@ -243,23 +249,25 @@
             <li class="scris"><strong>Informează-te:</strong> Fii la curent cu cele mai recente tactici de phishing și inginerie socială.</li>
             <li class="scris"><strong>Raportează incidentele:</strong> Dacă suspectezi o tentativă de phishing sau inginerie socială, raportează-o imediat la instituția relevantă (bancă, companie, etc.) și autorități.</li>
         </ul>
-        <h2 class="scris">Resurse utile</h2>
-        <ul>
-            <li class="scris"><a href="https://www.antiphishing.org/" target="_blank">Anti-Phishing Working Group</a> - Anti Phishing Team</li>
-            <li class="scris"><a href="https://www.cert.ro/" target="_blank">CERT-RO</a> - Centrul Național de Răspuns la Incidente de Securitate Cibernetică</li>
-            <li class="scris"><a href="https://www.enisa.europa.eu/" target="_blank">ENISA</a> - Agenția Uniunii Europene pentru Securitate Cibernetică</li>
-        </ul>
-        <p><strong class="scris">Aceasta este o pagină personală, nu are legătură cu vre-o companie sau unitate guvernamentală. Pentru detalii despre atacuri online, consultați:</strong></p>
-        <ul>
-            <li class="scris"><a href="https://cyberscoop.com/" target="_blank">Cyberscoop</a> - Platformă de știri dedicată securității cibernetice</li>
-            <li class="scris"><a href="https://thehackernews.com/" target="_blank">TheHackerNews</a> - Vulnerabilități software și noi tehnici de hacking</li>
-            <li class="scris"><a href="https://krebsonsecurity.com/" target="_blank">Krebs on Security</a> - Blog al lui Brian Krebs, știri și analize aprofundate</li>
-        </ul>
-        <p><strong class="scris">Fii precaut și protejează-te!</strong></p>
-        <p class="scris">Ai vreo idee sau sugestie despre ce ar mai trebui să conțină pagina ca atenționare împotriva scam-ului online? Lasă-ne un email: <strong>uu7553882@gmail.com</strong></p>
-    </div>
-</div>
-</div>
+        </div>
+     <!-- Al 3-lea box -->   
+        <div class="box">
+            <h2 class="scris">Resurse utile</h2>
+                    <ul>
+                        <li class="scris"><a href="https://www.antiphishing.org/" target="_blank">Anti-Phishing Working Group</a> - Anti Phishing Team</li>
+                        <li class="scris"><a href="https://www.cert.ro/" target="_blank">CERT-RO</a> - Centrul Național de Răspuns la Incidente de Securitate Cibernetică</li>
+                        <li class="scris"><a href="https://www.enisa.europa.eu/" target="_blank">ENISA</a> - Agenția Uniunii Europene pentru Securitate Cibernetică</li>
+                    </ul>
+                    <p><strong class="scris">Pentru detalii despre atacuri online, consultați:</strong></p>
+                    <ul>
+                        <li class="scris"><a href="https://cyberscoop.com/" target="_blank">Cyberscoop</a> - Platformă de știri dedicată securității cibernetice</li>
+                        <li class="scris"><a href="https://thehackernews.com/" target="_blank">TheHackerNews</a> - Vulnerabilități software și noi tehnici de hacking</li>
+                        <li class="scris"><a href="https://krebsonsecurity.com/" target="_blank">Krebs on Security</a> - Blog al lui Brian Krebs, știri și analize aprofundate</li>
+                    </ul>
+                <p><strong class="scris">Fii precaut și protejează-te!</strong></p>
+            <p class="scris">Ai vreo idee sau sugestie despre ce ar mai trebui să conțină pagina ca atenționare împotriva scam-ului online? Lasă-ne un email: <strong>uu7553882@gmail.com</strong></p>
+        </div>
+
 
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
