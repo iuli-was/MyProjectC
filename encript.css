@@ -1,0 +1,59 @@
+
+    body {
+      padding: 0px;
+      background-color: #f8f9fa;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    .scris {
+        color: rgb(15, 255, 80);
+    }
+
+    .example {
+        border: 1px solid #100d0d;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #08083b;
+    }
+
+    .box {
+        background: rgba(73, 72, 72, 0.8); 
+        padding: 20px;
+        margin: 40px auto; 
+        max-width: 800px; 
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .video-background {
+    position: fixed; /* sau absolute, dacă vrei doar o secțiune */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* asigură că stă în spate */
+    }
+
+    .video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    }
