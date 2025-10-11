@@ -46,10 +46,10 @@
     }
 
     .example {
-        border: 1px solid #100d0d;
         padding: 10px;
         margin-bottom: 15px;
-        background-color: #1e1e1f;
+        background: rgba(20, 20, 20, 0.8);
+
     }
 
     .video-background {
@@ -80,8 +80,8 @@
     <!-- navbar-->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand mx-3" href="./index.html">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-feather" viewBox="0 0 16 16">
-          <path d="M15.807.531c-.174-.177-.41-.289-.64-.363a3.8 3.8 0 0 0-.833-.15c-.62-.049-1.394 0-2.252.175C10.365.545 8.264 1.415 6.315 3.1S3.147 6.824 2.557 8.523c-.294.847-.44 1.634-.429 2.268.005.316.05.62.154.88q.025.061.056.122A68 68 0 0 0 .08 15.198a.53.53 0 0 0 .157.72.504.504 0 0 0 .705-.16 68 68 0 0 1 2.158-3.26c.285.141.616.195.958.182.513-.02 1.098-.188 1.723-.49 1.25-.605 2.744-1.787 4.303-3.642l1.518-1.55a.53.53 0 0 0 0-.739l-.729-.744 1.311.209a.5.5 0 0 0 .443-.15l.663-.684c.663-.68 1.292-1.325 1.763-1.892.314-.378.585-.752.754-1.107.163-.345.278-.773.112-1.188a.5.5 0 0 0-.112-.172M3.733 11.62C5.385 9.374 7.24 7.215 9.309 5.394l1.21 1.234-1.171 1.196-.027.03c-1.5 1.789-2.891 2.867-3.977 3.393-.544.263-.99.378-1.324.39a1.3 1.3 0 0 1-.287-.018Zm6.769-7.22c1.31-1.028 2.7-1.914 4.172-2.6a7 7 0 0 1-.4.523c-.442.533-1.028 1.134-1.681 1.804l-.51.524zm3.346-3.357C9.594 3.147 6.045 6.8 3.149 10.678c.007-.464.121-1.086.37-1.806.533-1.535 1.65-3.415 3.455-4.976 1.807-1.561 3.746-2.36 5.31-2.68a8 8 0 0 1 1.564-.173"/>
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M3 4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H3Zm4.293 5.707a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L9.586 12 7.293 9.707ZM13 14a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2h-3Z" clip-rule="evenodd"/>
         </svg>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,7 +126,10 @@
         <p class="scris">În era digitală, atacurile de <strong>phishing</strong> și <strong>inginerie socială</strong> au devenit din ce în ce mai sofisticate și mai frecvente. Aceste tactici pot compromite informațiile tale personale, financiare sau confidențiale. Fii vigilent și informează-te pentru a te proteja!</p>
     </div>
         <div class="box">
-            <h2 class="scris">Ce este Phishing-ul ?</h2>
+            <h2 class="scris"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-exclamation" viewBox="0 0 16 16">
+                                <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1.5a.5.5 0 0 1-1 0V11a.5.5 0 0 1 1 0m0 3a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                              </svg> Ce este Phishing-ul ?</h2>
             <p class="scris">• Phishing-ul este o formă de înșelătorie online prin care atacatorii se deghizează ca entități de încredere (bănci, companii, etc.) pentru a obține informații sensibile, cum ar fi parole, numere de carduri de credit sau informații personale. Aceste atacuri se realizează adesea prin e-mailuri, mesaje text sau site-uri web false.</p>
 
             <div><h5><p class="scris">• Unde ne uitam pentu a fii siguri ca nu este un fals ?</p></h5></div>
@@ -144,7 +147,7 @@
                     <a href="./assets/fakefac.png" target="_blank">
                         <img src="./assets/fakefac.png" alt="Fake Facebook" width="100%" height="250" style="object-fit: cover;">
                     </a>
-                    <h5 class="scris" style="color:rgb(104, 5, 5);">Pagina care nu aparține de Facebook.</h5>
+                    <h5 class="scris" style="color:#14F5A6;">Pagina care nu aparține de Facebook.</h5>
                 </div>
                 <div class="p-2" style="flex:1; min-width:200px;">
                     <a href="./assets/secure.png" target="_blank">
@@ -171,7 +174,10 @@
                 </div>
             </div>
 
-            <h2 class="scris">Ce înseamnă Impersonating ?</h2>
+            <h2 class="scris"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-expressionless" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m5 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                              </svg> Ce înseamnă Impersonating ?</h2>
             <p class="scris">• Impersonare este atunci când un atacator se deghizează ca o altă persoană, de exemplu, un angajat, administrator sau o companie, pentru a păcăli victimele sau sistemele.</p>
             <p class="scris">• Scopul poate fi furarea de informații sensibile, accesarea conturilor, efectuarea de tranzacții frauduloase, sau compromiterea sistemelor.</p>
             <div><h5><p class="scris">• Exemple comune de impersonating:</p></h5></div>
@@ -202,7 +208,16 @@
                         </div>
                     </div>
                 </div>
-                <p class="scris">• Nu distribui astfel de mesaje și nu te lăsa manipulat de ele.</p>
+                <p class="scris">   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                    </svg> Nu distribui astfel de mesaje și nu te lăsa manipulat de ele. 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                    </svg>
+                </p>
                 <h3 class="scris">De ce sunt astfel de mesaje periculoase sau inutile?</h3>
                 <strong class="scris">• Dezinformare: Adesea, conțin informații false sau exagerate despre companii mari, ca Facebook sau Meta.</strong>
                             <p class="scris">• Încercări de manipulare: Îți cer să distribui mesaje pentru a "răspândi vestea" sau pentru a "proteja" drepturi, dar în realitate, nu are nicio bază legală sau tehnică.</p>
@@ -215,7 +230,12 @@
 
     <!-- Al doilea box -->
         <div class="box">
-        <h2 class="scris">Ce pot face dacă am fost păcălit să-mi divulg credentialele ?</h2>
+        <h2 class="scris">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+            </svg>
+            Ce pot face dacă am fost păcălit să-mi divulg credentialele ?
+        </h2>
         <p class="scris">• Iată câteva acțiuni esențiale (nu uita că este o cursă contra timp după ce atacatorul are la îndemână datele tale)</p>
         <div class="example">
             <p class="d-inline-flex gap-1">
@@ -306,7 +326,7 @@
                         <li class="scris"><a href="https://krebsonsecurity.com/" target="_blank">Krebs on Security</a> - Blog al lui Brian Krebs, știri și analize aprofundate</li>
                     </ul>
                 <p><strong class="scris">Fii precaut și protejează-te!</strong></p>
-            <p class="scris">Ai vreo idee sau sugestie despre ce ar mai trebui să conțină pagina ca atenționare împotriva scam-ului online? Lasă-ne un email: <strong>chirasiulian001@gmail.com</strong></p>
+            <p class="scris">Ai vreo idee sau sugestie despre ce ar mai trebui să conțină pagina ca atenționare împotriva scamm-ului online? Lasă un email: <strong>chirasiulian001@gmail.com</strong></p>
         </div>
 </div>
 
@@ -317,6 +337,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
 
 
 
