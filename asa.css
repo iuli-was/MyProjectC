@@ -3,7 +3,6 @@
     padding: 0%;
     font-family: sans-serif;
     box-sizing: border-box;
-    
 }
 
 .hero{
@@ -12,7 +11,6 @@
     background: linear-gradient(45deg, #08001f, #30197d);
     color: #fff;
     position: relative;
-    overflow-x: hidden;
 }
 
 .container{
@@ -38,7 +36,7 @@
     content:'';
     width: 180px;
     height: 180px;
-    background: #f70167;
+    background: #cffab2;
     position: absolute;
     left:-50px;
     top: -50px;
@@ -49,7 +47,7 @@
     content:'';
     width: 180px;
     height: 180px;
-    background: #2184f5;
+    background: #672fe9;
     border-radius: 50%;
     position: absolute;
     right: -30px;
